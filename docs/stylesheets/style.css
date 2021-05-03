@@ -6,9 +6,33 @@ html, body {
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2rem;
+  background-color: lightblue;
 }
 
 .container {
   width: 80%;
   margin: 0 auto;
+}
+div.men-top {
+  background-color: yellow;
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  div.men-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+@media screen and (min-width: 400px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: lavender;
+  }
 }
