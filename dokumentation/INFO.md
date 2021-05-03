@@ -11,4 +11,7 @@ Alternitiv links
 
 ---
 ##### (började: 2021-04-26) 
+<br />
 
+#### (2021-05-03)
+Idag har jag fokiserat på att seta in alla element från legimus så att jag kan fixa stilerna sedan.  
