@@ -15,4 +15,5 @@ Idag har jag fokiserat på att seta in alla element från legimus så att jag ka
 vad jag har gjort är att setta in det mesta html code för naven som är menyn, bilderna till logorna från legimus och MTM också en loging knap. har också sate in elementen för sök funktionen och börjat på "huvud" delen av sidan.  
 extera problem som jag har upp komit är att menyn fungerar inte ens normalt eftersom att visa delar av menyn visas inte ens "normalt" som komer behövas fiksas.
 
-#### (2021-)
+#### (2021-05-10)
+jag har fortat med att stopa in alla element från legimus
