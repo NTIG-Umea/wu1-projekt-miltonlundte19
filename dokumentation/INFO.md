@@ -16,4 +16,6 @@ vad jag har gjort är att setta in det mesta html code för naven som är menyn,
 extera problem som jag har upp komit är att menyn fungerar inte ens normalt eftersom att visa delar av menyn visas inte ens "normalt" som komer behövas fiksas.
 
 #### (2021-05-10)
-jag har fortat med att stopa in alla element från legimus
+jag har fortat med att stopa in alla element från legimus.
+jag har också ändrat namnen på alla bilder så att dem är simplare så att sökvägarna blir änklare och "mer korekt".
+lakt till bilder och text för typ information om nya böker och bok tips.
