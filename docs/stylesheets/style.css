@@ -62,6 +62,18 @@ div.men-top {
 .s-text{
   color: #fff;
 }
+.rs_skip{
+
+}
+.ReadSpeakerLink{
+  padding: 3px 10px 0px 25px;
+  background: url(../images/readspeak_icon.gif) no-repeat;
+  white-space: nowrap;
+}
+
+.CS_clearfix{
+  
+}
 
 
 @media screen and (max-width: 600px) {
