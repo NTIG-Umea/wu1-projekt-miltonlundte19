@@ -19,3 +19,7 @@ extera problem som jag har upp komit är att menyn fungerar inte ens normalt eft
 jag har fortat med att stopa in alla element från legimus.
 jag har också ändrat namnen på alla bilder så att dem är simplare så att sökvägarna blir änklare och "mer korekt".
 lakt till bilder och text för typ information om nya böker och bok tips.
+
+#### (2021-05-17)
+jag har lakt in alla ellement från legimus och lagt till några classar.
+jag har också endrat allt som ändrarsej som boktips och artiklar till saknad också har jag ändrat all kontakts information att vara "anonym" / inte lagt till det.
