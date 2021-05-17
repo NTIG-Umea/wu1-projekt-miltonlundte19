@@ -8,13 +8,17 @@
   <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Hej</h1>
-    <div>
-      <a href="#">Logga in</a>
+  <div class="page-container startpage">
+    
+    <div class="clearfix">
+      <ul>
+        <li class="login-status">
+          <a href="#" class="btn login">Logga in</a>
+        </li>
+      </ul>
     </div>
 
-    <div>
+    <div id="sidhuvud" class="CS_clearfix">
       <div id="logotyp">
         <a href="#" title="Välkommen till Legimus, Länk till startsidan">
           <img src="images/logotyp_legimus.png" alt="Logga Legimus.">
@@ -27,82 +31,85 @@
           <span style="display: none;">MTM</span>
         </a>
       </div>
-      <div class="men-top">
-        <button> <span>Meny</span> </button>
+      <div class="CS_clearfix" id="container-top-menu">
+        <button id="mobile-menu-button">
+          <span class="menu-text">Meny</span>
+        </button>
         <ol style="display: none;">
-      <li>
-        <span></span>
-        <a href="#">Använda Legimus</a>
-      </li>
-      <li>
-        <span></span>
-        <a href="#">Appen Legimus</a>
-      </li>
-      <li>
-        <span></span>
-        <a href="#">Läsa</a>
-      </li>
-      <li>
-        <span></span>
-        <a href="#">Våra medier</a>
-      </li>
-      <li>
-        <span></span>
-        <a href="#">Vanliga frågor</a>
-      </li>
-      <li>
-        <span></span>
-        <a href="#">Lästips</a>
-      </li>
-      <li>
-        <span></span>
-        <a href="#">För bibliotek</a>
-      </li>
-      <li>
-        <span></span>
-        <a href="#">Student</a>
-      </li>
-      <li>
-        <span></span>
-        <a href="#">Barn och unga</a>
-      </li>
-      <li>
-        <span></span>
-        <a href="#">Lättläst</a>
-      </li>
-      <li>
-        <span></span>
-        <a href="#">Andra språk</a>
-      </li>
-      <li>
-        <span></span>
-        <a href="#">Om webbplatsen</a>
-      </li>
-      <li>
-        <span></span>
-        <a href="#">Mina sidor</a>
-      </li>
+          <li>
+            <span class="expander-icon"></span>
+            <a href="#">Använda Legimus</a>
+          </li>
+         <li>
+            <span class="expander-icon"></span>
+            <a href="#">Appen Legimus</a>
+          </li>
+          <li>
+            <span class="expander-icon"></span>
+            <a href="#">Läsa</a>
+          </li>
+          <li>
+            <span class="expander-icon"></span>
+            <a href="#">Våra medier</a>
+         </li>
+          <li>
+            <span class="expander-icon"></span>
+            <a href="#">Vanliga frågor</a>
+          </li>
+          <li>
+            <span class="expander-icon"></span>
+            <a href="#">Lästips</a>
+          </li>
+          <li>
+            <span class="expander-icon"></span>
+            <a href="#">För bibliotek</a>
+          </li>
+          <li>
+            <span class="expander-icon"></span>
+            <a href="#">Student</a>
+          </li>
+          <li>
+            <span class="expander-icon"></span>
+            <a href="#">Barn och unga</a>
+          </li>
+          <li>
+            <span class="expander-icon"></span>
+            <a href="#">Lättläst</a>
+          </li>
+          <li>
+            <span class="expander-icon"></span>
+            <a href="#">Andra språk</a>
+          </li>
+          <li>
+            <span class="expander-icon"></span>
+            <a href="#">Om webbplatsen</a>
+          </li>
+          <li class="last">
+            <span class="expander-icon"></span>
+            <a href="#">Mina sidor</a>
+          </li>
         </ol>
       </div>
     </div>
 
-    <div>
-      <fieldset>
-        <div>
+    <div id="mainsearch">
+      <fieldset class="interaction-element-group">
+        <div class="search-area">
           <input type="text"  placeholder="sök här.." title="Sök">
           <div>
           <input id="only-daisy" type="checkbox">
           <label for="only-daisy">Bara talböcker</label>
           </div>
-          <input type="submit" value="Sök">
+          <input type="submit" class="CS_button" value="Sök">
         </div>
-        <div>
-          <a href="#" title="Hjälp med sökfunktionen">sökhjälp</a> |
-          <a href="#" title="Utökad katogsökning">Utökad katogsökning</a>
+        <div class="search-links">
+          <a href="#" title="Hjälp med sökfunktionen" class="s-text">sökhjälp</a> |
+          <a href="#" title="Utökad katogsökning" class="s-text">Utökad katogsökning</a>
         </div>
       </fieldset>
     </div>
-    <div id="sidcontainer">
+
+    <div id="sidcontainer" class="CS_clearfix">
       <div id="innehall">
         
         <div>
