@@ -23,3 +23,5 @@ lakt till bilder och text för typ information om nya böker och bok tips.
 #### (2021-05-17)
 jag har lakt in alla ellement från legimus och lagt till några classar.
 jag har också endrat allt som ändrarsej som boktips och artiklar till saknad också har jag ändrat all kontakts information att vara "anonym" / inte lagt till det.
+##### (senare under dagen)
+jag har lagtill enumer class också har jag lagtill en bild till en länk och lite "regler" i classerna men för det mesta är dem toma så att stilen på sidan är helt förstörd nu.
