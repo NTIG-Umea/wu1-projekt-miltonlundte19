@@ -25,3 +25,7 @@ jag har lakt in alla ellement från legimus och lagt till några classar.
 jag har också endrat allt som ändrarsej som boktips och artiklar till saknad också har jag ändrat all kontakts information att vara "anonym" / inte lagt till det.
 ##### (senare under dagen)
 jag har lagtill enumer class också har jag lagtill en bild till en länk och lite "regler" i classerna men för det mesta är dem toma så att stilen på sidan är helt förstörd nu.
+
+
+#### (2021-05-24)
+jag har sat in stiler i style.css för ellement, id och claser.
