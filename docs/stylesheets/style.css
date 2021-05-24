@@ -4,9 +4,9 @@ html, body {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2rem;
-  background-color: lightblue;
+  font: 68.5%/1.4 Verdana,Geneva,Arial,Lucida,Helvetica,sans-serif;
+  color: #333;
+  background: #fff
 }
 
 .container {
@@ -22,7 +22,9 @@ div.men-top {
 
 
 .page-container{
-
+  width: 995px;
+  margin: 0 auto 30px;
+  position: relative;
 }
 .startpage{
 
@@ -96,7 +98,7 @@ div.men-top {
 
 }
 .part{
-
+  margin-bottom: 1em;
 }
 .teaser{
 
@@ -110,6 +112,109 @@ div.men-top {
 .introduction{
   
 }
+.clearfix{
+
+}
+.show-tabs-with-catalog-lists{
+
+}
+.tab-container{
+
+}
+.tabs{
+  list-style: none;
+  margin: 0;
+}
+.open{
+  background-color: #fff;
+  bottom: 0;
+}
+.CS_work{
+
+}
+.CS_list-container{
+
+}
+.work-details-header{
+
+}
+.work-cover{
+
+}
+.top-list-link{
+
+}
+.design-container{
+
+}
+.design-two_columns{
+  clear: both;
+}
+.startpage .design-two_columns {
+  margin: 0 -70px !important;
+}
+.design-zone{
+
+}
+.zone_one{
+
+}
+.design-two_columns .zone_one{
+  margin-right: 2%;
+}
+.design-two_columns>.zone_one{
+  float: left;
+  width: 49%;
+}
+.startpage .design-two_columns .part {
+  margin: 0 !important;
+}
+.CS_alternative-layout-False{
+
+}
+.CS_list{
+
+}
+.CS_list-item{
+
+}
+.CS_highlight-True{
+
+}
+.book-suggestion-list{
+
+}
+.box{
+
+}
+.tips.CS_list-container{
+  margin: 2em 0;
+}
+.tips{
+
+}
+#sidfot{
+  background-color: #fff;
+  border-top: 6px solid #dbdbdb;
+  padding: 1rem;
+}
+#sidcontainer{
+  margin: 0;
+}
+#mainsearch{
+  position: relative;
+  padding: 5px 10px;
+  z-index: 999;
+  background: #a54399;
+}
+#sidhuvud {
+  background-color: #fff;
+}
+#funktionsmeny {
+  background-color: white;
+  padding: 1em 1% 0 1%;
+  text-align: right;
+}
 
 
 
@@ -121,13 +226,9 @@ div.men-top {
   }
 }
 @media screen and (min-width: 400px) {
-  body {
-    background-color: lightgreen;
-  }
+
 }
 
 @media screen and (min-width: 800px) {
-  body {
-    background-color: lavender;
-  }
+
 }

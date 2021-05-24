@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
-  <div class="page-container startpage">
+  <div class="page-container startpage" id="startsida">
     
-    <div class="clearfix">
+    <div class="clearfix" id="funktionsmeny">
       <ul>
         <li class="login-status">
           <a href="#" class="btn login">Logga in</a>
@@ -139,72 +139,72 @@
               <img src="images/gront_stopljus.png" alt="Grönt ljus. Inga kända problem med nedladdningen. ">
               <p class="introduction">Läget just nu! Aktuella fel och störningar.</p>
               <p>Klicka här för att få mer information om aktuella fel, störningar och uppdateringar.</p>
-              <div>
+              <div class="clearfix">
               </div>
             </div>
           </div>
 
           <div>
-            <form action="/">
-              <div>
+            <form method="post" action="/" id="aspnetForm_3">
+              <div class="part show-tabs-with-catalog-lists tab-container">
 
                 <nav> 
-                  <ul>
-                    <li>Nya talböcker</li>
+                  <ul class="tabs">
+                    <li class="open">Nya talböcker</li>
                     <li>Nya punktskriftsböcker</li>
                     <li>Senast betygsatt</li>
                   </ul> 
                 </nav>
 
-                <div> 
+                <div class="tab-content open"> 
                   <div>
                     <ol>
-                      <li>
-                        <h3>
+                      <li class="CS_work CS_list-container CS_clearfix">
+                        <h3 class="work-details-header">
                           <a href="#">Saknas</a>
                           <small>(0000)
                           </small>
                         </h3>
-                        <div>
+                        <div class="work-cover">
                           <img src="images/bookcovers/bild-saknas.png"  alt="Book saknas">
                         </div>
                       </li>
-                      <li>
-                        <h3>
+                      <li class="CS_work CS_list-container CS_clearfix">
+                        <h3 class="work-details-header">
                           <a href="#">Saknas</a>
                           <small>(0000)
                           </small>
                         </h3>
-                        <div>
-                          <img src="images/bookcovers/bild-saknas.png" alt="Book saknas">
+                        <div class="work-cover">
+                          <img src="images/bookcovers/bild-saknas.png"  alt="Book saknas">
                         </div>
                       </li>
-                      <li>
-                        <h3>
-                          <a href="#">Book saknas</a>
+                      <li class="CS_work CS_list-container CS_clearfix">
+                        <h3 class="work-details-header">
+                          <a href="#">Saknas</a>
                           <small>(0000)
                           </small>
                         </h3>
-                        <div>
-                          <img src="images/bookcovers/bild-saknas.png" alt="Book saknas">
+                        <div class="work-cover">
+                          <img src="images/bookcovers/bild-saknas.png"  alt="Book saknas">
                         </div>
                       </li>
-                      <li>
-                        <h3>
-                          <a href="#">Book saknas</a>
+                      <li class="CS_work CS_list-container CS_clearfix">
+                        <h3 class="work-details-header">
+                          <a href="#">Saknas</a>
                           <small>(0000)
                           </small>
                         </h3>
-                        <div>
-                          <img src="images/bookcovers/bild-saknas.png" alt="Book saknas">
+                        <div class="work-cover">
+                          <img src="images/bookcovers/bild-saknas.png"  alt="Book saknas">
                         </div>
                       </li>
                     </ol>
-                    <a href="#">Se hela listan</a>
+                    <a class="top-list-link" href="#">Se hela listan</a>
                   </div>
                 </div>
 
-                <div>
+                <div style="display: none;">
                   <div>
                     <ol>
                       <li>
@@ -248,7 +248,7 @@
                   </div>
                 </div>
 
-                <div>
+                <div style="display: none;">
                   <div>
                     <ol>
                       <li>
@@ -298,38 +298,39 @@
 
 
           <div>
-            <div>
+            <div class="design-container design-two_columns clearfix">
 
-              <div>
+              <div class="design-zone zone_one">
                 <div>
-                  <div>
-                    <h2>Artiklar</h2>
-                    <div>
-                      <ul>
-                        <li>
-                          <div>
+                  <div class="part show-articles-in-columns">
+                    <h2 class="header">Artiklar</h2>
+                    <div class="CS_alternative-layout-False">
+                      <ul class="CS_list-container CS_list">
+
+                        <li class="CS_list-item CS_highlight-True">
+                          <div class="article">
                             <a href="#">
                               <img src="images/bookcovers/bild-saknas.png" alt="bild saknas">
-                              <h3>Title saknas</h3>
-                              <p>deskripton saknas</p>
+                              <h3 class="header">Title saknas</h3>
+                              <p class="clearfix">deskripton saknas</p>
                             </a>
                           </div>
                         </li>
-                        <li>
-                          <div>
+                        <li class="CS_list-item CS_highlight-True">
+                          <div class="article">
                             <a href="#">
                               <img src="images/bookcovers/bild-saknas.png" alt="bild saknas">
-                              <h3>Title saknas</h3>
-                              <p>deskripton saknas</p>
+                              <h3 class="header">Title saknas</h3>
+                              <p class="clearfix">deskripton saknas</p>
                             </a>
                           </div>
                         </li>
-                        <li>
-                          <div>
+                        <li class="CS_list-item CS_highlight-True">
+                          <div class="article">
                             <a href="#">
                               <img src="images/bookcovers/bild-saknas.png" alt="bild saknas">
-                              <h3>Title saknas</h3>
-                              <p>deskripton saknas</p>
+                              <h3 class="header">Title saknas</h3>
+                              <p class="clearfix">deskripton saknas</p>
                             </a>
                           </div>
                         </li>
@@ -339,10 +340,10 @@
                 </div>
               </div>
 
-              <div>
+              <div class="design-zone zone_one">
                 <div>
-                  <div>
-                    <h2>Nya tips</h2>
+                  <div class="part book-suggestion-list clearfix box tips CS_list-container CS_clearfix">
+                    <h2 class="header">Nya tips</h2>
                     <ol>
                       <li>
                         <div class="book-suggestion CS_clearfix">
@@ -419,7 +420,7 @@
       </div>
     </div>
 
-    <div>
+    <div id="sidfot"> 
       <div class="til-column">
         <h2>Telefontider idag</h2>
         <div class="part opening-hours box oppettider">
