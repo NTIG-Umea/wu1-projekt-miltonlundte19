@@ -1,198 +1,4 @@
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font: 68.5%/1.4 Verdana,Geneva,Arial,Lucida,Helvetica,sans-serif;
-  color: #333;
-  background: #fff
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-div.men-top {
-  background-color: yellow;
-  padding: 20px;
-}
-
-
-
-
-.page-container{
-  width: 995px;
-  margin: 0 auto 30px;
-  position: relative;
-}
-.startpage{
-
-}
-.clearfix{
-
-}
-.login-status{
-
-}
-.btn{
-
-}
-.login{
-
-}
-.last{
-
-}
-.expander-icon{
-
-}
-.interaction-element-group{
-
-}
-.search-area{
-
-}
-.CS_button{
-
-}
-.search-links{
-  float: right;
-  color: #333;
-
-}
-.s-text{
-  color: #fff;
-}
-.rs_skip{
-
-}
-.ReadSpeakerLink{
-  padding: 3px 10px 0px 25px;
-  background: url(../images/readspeak_icon.gif) no-repeat;
-  white-space: nowrap;
-}
-
-.CS_clearfix{
-
-}
-.menu-text{
-
-}
-.container-top-menu{
-
-}
-.CS_startBox{
-
-}
-.CS_tallStartBox{
-
-}
-.puff-content{
-
-}
-.huvudpuff{
-
-}
-.startpufftext{
-
-}
-.part{
-  margin-bottom: 1em;
-}
-.teaser{
-
-}
-.CS_quickLink{
-
-}
-.CS_quickLinkNarrow{
-
-}
-.introduction{
-  
-}
-.clearfix{
-
-}
-.show-tabs-with-catalog-lists{
-
-}
-.tab-container{
-
-}
-.tabs{
-  list-style: none;
-  margin: 0;
-}
-.open{
-  background-color: #fff;
-  bottom: 0;
-}
-.CS_work{
-
-}
-.CS_list-container{
-
-}
-.work-details-header{
-
-}
-.work-cover{
-
-}
-.top-list-link{
-
-}
-.design-container{
-
-}
-.design-two_columns{
-  clear: both;
-}
-.startpage .design-two_columns {
-  margin: 0 -70px !important;
-}
-.design-zone{
-
-}
-.zone_one{
-
-}
-.design-two_columns .zone_one{
-  margin-right: 2%;
-}
-.design-two_columns>.zone_one{
-  float: left;
-  width: 49%;
-}
-.startpage .design-two_columns .part {
-  margin: 0 !important;
-}
-.CS_alternative-layout-False{
-
-}
-.CS_list{
-
-}
-.CS_list-item{
-
-}
-.CS_highlight-True{
-
-}
-.book-suggestion-list{
-
-}
-.box{
-
-}
-.tips.CS_list-container{
-  margin: 2em 0;
-}
-.tips{
-
-}
+/* Stilar för alla id */
 #sidfot{
   background-color: #fff;
   border-top: 6px solid #dbdbdb;
@@ -215,6 +21,271 @@ div.men-top {
   padding: 1em 1% 0 1%;
   text-align: right;
 }
+
+
+/* stiler för alla element */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 68.5%/1.4 Verdana,Geneva,Arial,Lucida,Helvetica,sans-serif;
+  color: #333;
+  background: #fff
+}
+li{
+  margin: 0;
+  padding: 0;
+}
+ul, ol {
+  margin: 0 0 1em 2%;
+  padding: 0;
+  list-style-position: inside;
+}
+
+/* id som förändrar element */
+#funktionsmeny ul li {
+  display: inline-block;
+}
+
+
+
+
+/* stilar för claser */
+
+ /*  clerflec och dens olika delar */ 
+.clearfix{
+
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix:before, .clearfix:after{
+  display: table;
+  content: "";
+}
+
+.CS_clearfix{
+
+}
+.CS_clearfix:after{
+  visibility: hidden;
+    display: block;
+    height: 0;
+    font-size: 0;
+    content: " ";
+    clear: both;
+}
+
+ /* CS clasernas stiler */
+.CS_button{
+
+}
+.CS_startBox{
+
+}
+.CS_tallStartBox{
+
+}
+.CS_quickLink{
+
+}
+.CS_quickLinkNarrow{
+
+}
+.CS_list-container{
+
+}
+.CS_work{
+
+}
+.CS_alternative-layout-False{
+
+}
+.CS_list{
+
+}
+.CS_list-item{
+
+}
+.CS_highlight-True{
+
+}
+
+
+.tips.CS_list-container{
+  margin: 2em 0;
+}
+
+
+
+ /* multi claser */
+.startpage .design-two_columns .part {
+  margin: 0 !important;
+}
+
+.design-two_columns .zone_one{
+  margin-right: 2%;
+}
+.design-two_columns>.zone_one{
+  float: left;
+  width: 49%;
+}
+
+.startpage .design-two_columns {
+  margin: 0 -70px !important;
+}
+
+
+
+ /**/
+
+
+ /* inte sorterade claser */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+div.men-top {
+  background-color: yellow;
+  padding: 20px;
+}
+
+
+
+
+.page-container{
+  width: 995px;
+  margin: 0 auto 30px;
+  position: relative;
+}
+.startpage{
+
+}
+
+.login-status{
+
+}
+.btn{
+
+}
+.login{
+
+}
+.last{
+
+}
+.expander-icon{
+
+}
+.interaction-element-group{
+
+}
+.search-area{
+
+}
+
+.search-links{
+  float: right;
+  color: #333;
+
+}
+.s-text{
+  color: #fff;
+}
+.rs_skip{
+
+}
+.ReadSpeakerLink{
+  padding: 3px 10px 0px 25px;
+  background: url(../images/readspeak_icon.gif) no-repeat;
+  white-space: nowrap;
+}
+
+
+.menu-text{
+
+}
+.container-top-menu{
+
+}
+
+
+.puff-content{
+
+}
+.huvudpuff{
+
+}
+.startpufftext{
+
+}
+.part{
+  margin-bottom: 1em;
+}
+.teaser{
+
+}
+
+.introduction{
+  
+}
+.clearfix{
+
+}
+.show-tabs-with-catalog-lists{
+
+}
+.tab-container{
+
+}
+.tabs{
+  list-style: none;
+  margin: 0;
+}
+.open{
+  background-color: #fff;
+  bottom: 0;
+}
+
+
+.work-details-header{
+
+}
+.work-cover{
+
+}
+.top-list-link{
+
+}
+.design-container{
+
+}
+.design-two_columns{
+  clear: both;
+}
+
+.design-zone{
+
+}
+.zone_one{
+
+}
+
+
+
+.book-suggestion-list{
+
+}
+.box{
+
+}
+
+.tips{
+
+}
+
 
 
 
