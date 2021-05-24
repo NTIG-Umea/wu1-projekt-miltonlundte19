@@ -4,7 +4,7 @@
   border-top: 6px solid #dbdbdb;
   padding: 1rem;
 }
-#sidcontainer{
+#sidcontainer, #container-top-men{
   margin: 0;
 }
 #mainsearch{
@@ -21,7 +21,38 @@
   padding: 1em 1% 0 1%;
   text-align: right;
 }
+#tpb_logotyp{
+  float: right;
+  margin: 2rem 3rem 1rem;
+}
+ 
 
+/* multi id stiler */
+#sidhuvud #logotyp{
+  float: left;
+  margin-left: 2%;
+  margin-top: 1.5em;
+}
+#sidhuvud #container-top-menu {
+  position: relative;
+  display: block;
+  clear: both;
+  background-color: #fff;
+  height: 55px;
+  margin-bottom: 10px
+}
+#mainsearch #query {
+  display: inline-block;
+  padding: 0 9px;
+  font-size: 1.5em;
+  border-radius: 5px;
+  width: 743px;
+  height: 24px;
+  margin-right: 5px;
+}
+#mainsearch #only-daisy-option {
+  display: inline-block;
+}
 
 /* stiler för alla element */
 html, body {
@@ -43,14 +74,67 @@ ul, ol {
   padding: 0;
   list-style-position: inside;
 }
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #b52f5e;
+  background-color: transparent;
+}
+form {
+  margin: 0%;
+  padding: 0;
+}
+fieldset {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+label {
+  display: block;
+  font-weight: bold;
+}
+
+
 
 /* id som förändrar element */
 #funktionsmeny ul li {
   display: inline-block;
 }
+#funktionsmeny .login-status a {
+  padding: 6px 15px;
+  text-decoration: none;
+  background-color: #a54399;
+  color: white;
+}
+#funktionsmeny .login{
+  font-size: 1.2em;
+  font-weight: 900;
+}
+#tpb_logotyp a {
+  display: inline-block;
+}
+#mainsearch label {
+  display: none;
+}
+
+#sidhuvud ol {
+  list-style: none;
+}
+#mainsearch #only-daisy-option input {
+  height: 25px;
+  vertical-align: bottom;
+}
 
 
-
+/* multi stiler (förändras eftersom att den har båda av stilerna)*/
+a.btn {
+  padding: 6px 15px;
+  text-decoration: none;
+  background-color: #a54399;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
 
 /* stilar för claser */
 
@@ -136,8 +220,34 @@ ul, ol {
 .startpage .design-two_columns {
   margin: 0 -70px !important;
 }
+fieldset>div{
+  margin-bottom: 0.5rem;
+}
 
 
+
+
+
+
+ /* multi stilar (med id och ellement) */
+
+ #sidhuvud #container-top-menu ol li a.expander-icon, #sidhuvud #container-top-menu ol li span.expander-icon {
+  display: none;
+ }
+
+ #sidhuvud #container-top-menu ol li a, #sidhuvud #container-top-menu ol li span {
+  display: block;
+  float: left;
+  padding: 0.6rem 1%;
+  font-family: "variableblack",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  font-size: 1.4em;
+  color: black;
+ }
+
+ #sidhuvud #container-top-menu ol li.last span, #sidhuvud #container-top-menu ol li.last a {
+   float: right;
+ }
 
  /**/
 
@@ -154,16 +264,46 @@ div.men-top {
 
 
 
-
 .page-container{
   width: 995px;
   margin: 0 auto 30px;
   position: relative;
 }
+.search-links{
+  float: right;
+  color: #333;
+
+}
+.s-text{
+  color: #fff;
+}
+.ReadSpeakerLink{
+  padding: 3px 10px 0px 25px;
+  background: url(../images/readspeak_icon.gif) no-repeat;
+  white-space: nowrap;
+}
+.part{
+  margin-bottom: 1em;
+}
+.tabs{
+  list-style: none;
+  margin: 0;
+}
+.open{
+  background-color: #fff;
+  bottom: 0;
+}
+.design-two_columns{
+  clear: both;
+}
+.search-area{
+  position: relative;
+}
+
+/* inte sorterade toma claser */
 .startpage{
 
 }
-
 .login-status{
 
 }
@@ -182,36 +322,16 @@ div.men-top {
 .interaction-element-group{
 
 }
-.search-area{
 
-}
-
-.search-links{
-  float: right;
-  color: #333;
-
-}
-.s-text{
-  color: #fff;
-}
 .rs_skip{
 
 }
-.ReadSpeakerLink{
-  padding: 3px 10px 0px 25px;
-  background: url(../images/readspeak_icon.gif) no-repeat;
-  white-space: nowrap;
-}
-
-
 .menu-text{
 
 }
 .container-top-menu{
 
 }
-
-
 .puff-content{
 
 }
@@ -221,13 +341,9 @@ div.men-top {
 .startpufftext{
 
 }
-.part{
-  margin-bottom: 1em;
-}
 .teaser{
 
 }
-
 .introduction{
   
 }
@@ -240,16 +356,6 @@ div.men-top {
 .tab-container{
 
 }
-.tabs{
-  list-style: none;
-  margin: 0;
-}
-.open{
-  background-color: #fff;
-  bottom: 0;
-}
-
-
 .work-details-header{
 
 }
@@ -262,26 +368,18 @@ div.men-top {
 .design-container{
 
 }
-.design-two_columns{
-  clear: both;
-}
-
 .design-zone{
 
 }
 .zone_one{
 
 }
-
-
-
 .book-suggestion-list{
 
 }
 .box{
 
 }
-
 .tips{
 
 }

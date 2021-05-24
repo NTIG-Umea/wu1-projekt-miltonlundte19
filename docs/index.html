@@ -36,7 +36,7 @@
         <button id="mobile-menu-button">
           <span class="menu-text">Meny</span>
         </button>
-        <ol style="display: none;">
+        <ol>
           <li>
             <span class="expander-icon"></span>
             <a href="#">Använda Legimus</a>
@@ -96,8 +96,9 @@
     <div id="mainsearch">
       <fieldset class="interaction-element-group">
         <div class="search-area">
-          <input type="text"  placeholder="sök här.." title="Sök">
-          <div>
+          <label for="query" accesskey="4" title="Snabbkommando: 4">Sök</label>
+          <input name="query" type="text" id="query" placeholder="sök här.." title="Sök" tabindex="8" autocomplete="off">
+          <div id="only-daisy-option">
           <input id="only-daisy" type="checkbox">
           <label for="only-daisy">Bara talböcker</label>
           </div>
