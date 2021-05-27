@@ -25,8 +25,23 @@
   float: right;
   margin: 2rem 3rem 1rem;
 }
- 
+#innehall {
+  position: relative;
 
+}
+#innehall {
+  padding-top: 1.5em;
+}
+#innehall {
+  min-height: 700px;
+  padding: 0 2% 1em;
+  background: #fff;
+}
+#location-path {
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+}
 /* multi id stiler */
 #sidhuvud #logotyp{
   float: left;
@@ -34,7 +49,9 @@
   margin-top: 1.5em;
 }
 #sidhuvud #container-top-menu {
-  position: relative;
+    position: relative;
+}
+#sidhuvud #container-top-menu {
   display: block;
   clear: both;
   background-color: #fff;
@@ -53,7 +70,16 @@
 #mainsearch #only-daisy-option {
   display: inline-block;
 }
-
+#mainserch #snabbsokknapp {
+  display: inline-block;
+  font-size: 1.4em;
+  width: 70px;
+  height: 37px;
+  margin-right: 0;
+}
+#startsida #innehall {
+  padding-bottom: 0;
+}
 /* stiler för alla element */
 html, body {
   margin: 0;
@@ -64,6 +90,10 @@ body {
   font: 68.5%/1.4 Verdana,Geneva,Arial,Lucida,Helvetica,sans-serif;
   color: #333;
   background: #fff
+}
+body {
+  background: url(../images/body-bg.jpg) no-repeat center fixed;
+  background-size: cover;
 }
 li{
   margin: 0;
@@ -80,6 +110,9 @@ a {
   color: #b52f5e;
   background-color: transparent;
 }
+h2 {
+  font-size: 1.4rem;
+}
 form {
   margin: 0%;
   padding: 0;
@@ -93,18 +126,32 @@ label {
   display: block;
   font-weight: bold;
 }
+input[type="submit"] {
+  -webkit-appearance: square-button;
+  cursor: pointer;
+  white-space: normal;
+}
 
+h2, h3 {
+  font-family: "variableblack",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+  /* multi ellement stilar */
+  a img {
+    border-width: 0;
+  }
+  h2 a, h3 a {
+    font-family: "variableblack",Helvetica,Arial,sans-serif;
+    font-weight: normal;
+  }
 
 
 /* id som förändrar element */
-#funktionsmeny ul li {
-  display: inline-block;
-}
-#funktionsmeny .login-status a {
-  padding: 6px 15px;
-  text-decoration: none;
-  background-color: #a54399;
-  color: white;
+
+#funktionsmeny ul {
+  margin: 0;
 }
 #funktionsmeny .login{
   font-size: 1.2em;
@@ -116,29 +163,23 @@ label {
 #mainsearch label {
   display: none;
 }
-
 #sidhuvud ol {
-  list-style: none;
+  list-style-type: none;
 }
-#mainsearch #only-daisy-option input {
-  height: 25px;
-  vertical-align: bottom;
+#mainsearch a {
+  color: #fff;
 }
-
-
+#innehall h2 {
+  line-height: 1.25em;
+  margin-bottom: 0.25em;
+  margin-top: 0.5em;
+}
 /* multi stiler (förändras eftersom att den har båda av stilerna)*/
-a.btn {
-  padding: 6px 15px;
-  text-decoration: none;
-  background-color: #a54399;
-  color: white;
-  border: none;
-  border-radius: 5px;
-}
+
 
 /* stilar för claser */
 
- /*  clerflec och dens olika delar */ 
+ /*  befor och after claser */ 
 .clearfix{
 
 }
@@ -161,16 +202,25 @@ a.btn {
     content: " ";
     clear: both;
 }
+#sidhuvud #container-top-menu:before{
+  content: url(../images/menu-shadow-top.png);
+  display: block;
+}
 
  /* CS clasernas stiler */
 .CS_button{
 
 }
 .CS_startBox{
-
+  padding: 1em;
+  border: 1px solid #dbdbdb;
+  background-repeat: no-repeat;
 }
 .CS_tallStartBox{
-
+  min-height: 280px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 23%);
 }
 .CS_quickLink{
 
@@ -203,12 +253,10 @@ a.btn {
 }
 
 
-
  /* multi claser */
 .startpage .design-two_columns .part {
   margin: 0 !important;
 }
-
 .design-two_columns .zone_one{
   margin-right: 2%;
 }
@@ -216,7 +264,6 @@ a.btn {
   float: left;
   width: 49%;
 }
-
 .startpage .design-two_columns {
   margin: 0 -70px !important;
 }
@@ -225,16 +272,26 @@ fieldset>div{
 }
 
 
-
-
-
-
- /* multi stilar (med id och ellement) */
-
+ /* multi stilar (med id, clasar och ellement) */
+ #funktionsmeny ul li {
+   display: inline-block;
+ }
+ #funktionsmeny .login-status a {
+   padding: 6px 15px;
+   text-decoration: none;
+   background-color: #a54399;
+   color: white;
+ }
+ #mainsearch #only-daisy-option input {
+   height: 25px;
+   vertical-align: bottom;
+ }
+ #sidhuvud #container-top-menu ol {
+   display: block;
+ }
  #sidhuvud #container-top-menu ol li a.expander-icon, #sidhuvud #container-top-menu ol li span.expander-icon {
   display: none;
  }
-
  #sidhuvud #container-top-menu ol li a, #sidhuvud #container-top-menu ol li span {
   display: block;
   float: left;
@@ -244,12 +301,60 @@ fieldset>div{
   font-size: 1.4em;
   color: black;
  }
-
  #sidhuvud #container-top-menu ol li.last span, #sidhuvud #container-top-menu ol li.last a {
    float: right;
  }
-
+ #mainsearch #only-daisy-option label {
+   line-height: 30px;
+   white-space: pre;
+   margin-top: 2px;
+ }
+ #mainsearch label[for=only-daisy] {
+   display: inline-block;
+   color: #fff;
+   margin-left: 2px;
+ }
+ #snabbsokknapp.CS_button {
+  background-color: #e7e7e7;
+  color: black;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  margin: 0.2em 0.4em;
+  font-weight: bold;
+ }
+ input[type="submit"] ,a.btn {
+  padding: 6px 15px;
+  text-decoration: none;
+  background-color: #a54399;
+  color: white;
+  border: none;
+  border-radius: 5px;
+ }
+ #SpeedSearchForm .interaction-element-group div+div {
+   margin-top: 6px;
+ }
+ #SpeedSearchForm .search-links {
+   float: right;
+ }
+ .page-container #sidcontainer {
+   display: table;
+   width: 100%;
+ }
+ .page-container #sidcontainer #innehall {
+   display: table-cell;
+ }
+ #innehall>* {
+   margin-bottom: .5em;
+ }
+ .puff-content h2 a {
+   font-size: 17px;
+ }
+ .puff-content .startpufftext a {
+   font-size: 15px;
+ }
  /**/
+
 
 
  /* inte sorterade claser */
@@ -262,21 +367,22 @@ div.men-top {
   padding: 20px;
 }
 
-
-
+.sit-dos-not-work-sov-i-had-to-majk-this-class-wid-speling-not-god-and-grama {
+  width: auto;
+  padding: 0 190px !important;
+}
+.stiles-dos-not-want-to-work-tow {
+  margin-left: -170px;
+  margin-right: -170px;
+}
 .page-container{
   width: 995px;
   margin: 0 auto 30px;
   position: relative;
 }
-.search-links{
-  float: right;
-  color: #333;
 
-}
-.s-text{
-  color: #fff;
-}
+
+
 .ReadSpeakerLink{
   padding: 3px 10px 0px 25px;
   background: url(../images/readspeak_icon.gif) no-repeat;
@@ -299,11 +405,28 @@ div.men-top {
 .search-area{
   position: relative;
 }
+.access-key-anchor {
+  position: absolute;
+  left: -9999px;
+}
+.rs_skip{
+  position: absolute;
+  right: 0;
+}
+.puff-content{
+  background: white;
+  position: absolute;
+  width: 600px;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -320px
+}
+
 
 /* inte sorterade toma claser */
-.startpage{
 
-}
 .login-status{
 
 }
@@ -322,17 +445,10 @@ div.men-top {
 .interaction-element-group{
 
 }
-
-.rs_skip{
-
-}
 .menu-text{
 
 }
 .container-top-menu{
-
-}
-.puff-content{
 
 }
 .huvudpuff{
@@ -346,9 +462,6 @@ div.men-top {
 }
 .introduction{
   
-}
-.clearfix{
-
 }
 .show-tabs-with-catalog-lists{
 

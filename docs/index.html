@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
-  <div class="page-container startpage" id="startsida">
+  <div class="page-container" id="startsida">
     
     <div class="clearfix" id="funktionsmeny">
       
@@ -23,13 +23,13 @@
       <div id="logotyp">
         <a href="#" title="Välkommen till Legimus, Länk till startsidan">
           <img src="images/logotyp_legimus.png" alt="Logga Legimus.">
-          <span style="display: none;">Till startsidan.</span>
+          <span class="access-key-anchor">Till startsidan.</span>
         </a>
       </div>
       <div id="tpb_logotyp">
         <a href="#" id="tpb_logga" title="Till mtm.se, öppnas i nytt fönster.">
           <img src="images/logo_mtm.png" alt="MTMlogotyp">
-          <span style="display: none;">MTM</span>
+          <span class="access-key-anchor">MTM</span>
         </a>
       </div>
       <div class="CS_clearfix" id="container-top-menu">
@@ -94,27 +94,30 @@
     </div>
 
     <div id="mainsearch">
-      <fieldset class="interaction-element-group">
-        <div class="search-area">
-          <label for="query" accesskey="4" title="Snabbkommando: 4">Sök</label>
-          <input name="query" type="text" id="query" placeholder="sök här.." title="Sök" tabindex="8" autocomplete="off">
-          <div id="only-daisy-option">
-          <input id="only-daisy" type="checkbox">
-          <label for="only-daisy">Bara talböcker</label>
+      <form id="SpeedSearchForm" method="get" action="search">
+        <fieldset class="interaction-element-group">
+          <div class="search-area">
+            <label for="query" accesskey="4" title="Snabbkommando: 4">Sök</label>
+            <input name="query" type="text" id="query" placeholder="sök här.." title="Sök" tabindex="8" autocomplete="off">
+            <div id="only-daisy-option">
+            <input id="only-daisy" type="checkbox">
+            <label for="only-daisy">Bara talböcker</label>
+            </div>
+            <input name="snabbsokknapp" type="submit" id="snabbsokknapp" class="CS_button" tabindex="10" value="Sök">
           </div>
-          <input type="submit" class="CS_button" value="Sök">
-        </div>
-        <div class="search-links">
-          <a href="#" title="Hjälp med sökfunktionen" class="s-text">sökhjälp</a> |
-          <a href="#" title="Utökad katogsökning" class="s-text">Utökad katogsökning</a>
-        </div>
-      </fieldset>
+          <div class="search-links">
+            <a href="#" title="Hjälp med sökfunktionen" >sökhjälp</a> |
+            <a href="#" title="Utökad katogsökning" >Utökad katogsökning</a>
+          </div>
+        </fieldset>
+      </form>
+      
     </div>
 
     <div id="sidcontainer" class="CS_clearfix">
-      <div id="innehall">
+      <div id="innehall" class="sit-dos-not-work-sov-i-had-to-majk-this-class-wid-speling-not-god-and-grama">
         
-        <div>
+        <div id="location-path" class="stiles-dos-not-want-to-work-tow">
           <div class="rs_skip">
             <a accesskey="L" href="#" class="ReadSpeakerLink">Läs sida</a>
           </div>
@@ -122,7 +125,7 @@
 
         <div>
 
-          <div class="CS_startBox CS_tallStartBox" style="background-image: url(images/Ivantanpaljusaretider_banner955.jpg);">
+          <div class="CS_startBox CS_tallStartBox" style="background-image: url(images/Ivantanpaljusaretider_banner955.jpg); margin: 0 -170px;">
             <div class="puff-content">
               
               <h2 style="color: #000000;">
@@ -131,11 +134,11 @@
                 </a>
               </h2>
               <div class="startpufftext">
-                <a href="#" class="huvudpuff">När allt löser sig på bästa möjliga sätt</a> 
+                <a href="#" class="huvudpuff" style="font-weight: normal; color: #000000;">När allt löser sig på bästa möjliga sätt</a> 
               </div>
             </div> 
           </div>
-
+          <!-- har är jag -->
           <div>
             <div class="part teaser CS_quickLink CS_quickLinkNarrow">
               <img src="images/gront_stopljus.png" alt="Grönt ljus. Inga kända problem med nedladdningen. ">
