@@ -113,8 +113,11 @@ a {
 h2 {
   font-size: 1.4rem;
 }
+h3 {
+  font-size: 1.3rem;
+}
 form {
-  margin: 0%;
+  margin: 0;
   padding: 0;
 }
 fieldset {
@@ -138,6 +141,14 @@ h2, h3 {
   margin: 0;
   padding: 0;
 }
+p {
+  margin: 0 0 1em 0;
+  padding: 0 0 0 0;
+}
+p {
+  font-size: 1.2em;
+  font-weight: normal;
+}
   /* multi ellement stilar */
   a img {
     border-width: 0;
@@ -145,6 +156,9 @@ h2, h3 {
   h2 a, h3 a {
     font-family: "variableblack",Helvetica,Arial,sans-serif;
     font-weight: normal;
+  }
+  a p {
+    color: #333;
   }
 
 
@@ -163,7 +177,7 @@ h2, h3 {
 #mainsearch label {
   display: none;
 }
-#sidhuvud ol {
+#sidhuvud ol, .CS_search-result ol {
   list-style-type: none;
 }
 #mainsearch a {
@@ -173,6 +187,12 @@ h2, h3 {
   line-height: 1.25em;
   margin-bottom: 0.25em;
   margin-top: 0.5em;
+}
+#sidcontainer img {
+  border-radius: 10px;
+}
+#innehall li {
+  font-size: 1.2em;
 }
 /* multi stiler (förändras eftersom att den har båda av stilerna)*/
 
@@ -251,7 +271,9 @@ h2, h3 {
 .tips.CS_list-container{
   margin: 2em 0;
 }
-
+.stiles-dos-not-want-to-work-4 {
+   display: block !important;
+ }
 
  /* multi claser */
 .startpage .design-two_columns .part {
@@ -270,8 +292,17 @@ h2, h3 {
 fieldset>div{
   margin-bottom: 0.5rem;
 }
-
-
+#innehall .tab-container .tabs li.open{
+  background-color: #fff;
+  bottom: 0;
+}
+.part{
+  margin-bottom: 1em;
+}
+.part ol {
+  margin: 0;
+  list-style: none;
+}
  /* multi stilar (med id, clasar och ellement) */
  #funktionsmeny ul li {
    display: inline-block;
@@ -353,6 +384,177 @@ fieldset>div{
  .puff-content .startpufftext a {
    font-size: 15px;
  }
+ #innehall .CS_quickLink, .CS_search-result {
+   display: block;
+   margin-bottom: 1.5em;
+ }
+ .part.teaser{
+   padding: 10px;
+   border: 1px solid transparent !important;
+   -webkit-transition: border-coler 0.3s;
+ }
+ #startsida #innehall .tab-container {
+   margin: 0 -70px;
+ }
+ #innehall .tab-container {
+   position: relative;
+ }
+ #innehall .tab-container .tabs li {
+   display: inline-block;
+   border: 1px solid #e5e5e5;
+   border-bottom-color: transparent;
+   border-radius: 5px 5px 0 0;
+   bottom: -5px;
+   position: relative;
+   background-color: #f9f9f9;
+   padding: 10px;
+   color: #b52f5e;
+   cursor: pointer;
+   font-weight: bold;
+ }
+ #innehall .tab-container .tab-content {
+   display: none;
+   position: relative;
+   padding: 10px 20px 10px;
+   margin: 1em 3%;
+   padding: 0px 0px 1px;
+   margin: 0 -2% 3em;
+   background-color: white;
+ }
+ #innehall .CS_search-result {
+   display: block;
+ }
+ .part.search-result {
+   position: relative;
+ }
+ #innehall .tab-container .tab-content ol {
+   display: table;
+   table-layout: fixed;
+   width: 100%;
+ }
+ .show-tabs-with-catalog-lists .CS_search-result>ol {
+   margin: 0 !important;
+ }
+ #innehall .tab-container .tab-content .CS_work {
+   display: table-cell;
+   border: none;
+   text-align: center;
+ }
+ #innehall .CS_search-result li {
+   padding: 0.5em;
+ }
+ #innehall .CS_list-container {
+   display: block;
+   margin-bottom: 1.5em;
+ }
+ .show-tabs-with-catalog-lists .CS_work {
+   border: 1px solid transparent !important;
+   -webkit-transition: border-color 0.3s;
+ }
+ #innehall .tab-content .CS_work .work-details-header {
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+ }
+ #innehall .tab-container .tab-content .CS_work .work-details-header small {
+   display: block;
+ }
+ #innehall .tab-container .tab-content .CS_work .work-cover {
+   float: none !important;
+   text-align: center;
+   margin: 0.5em auto;
+ }
+ .part.search-result .CS_work .work-cover {
+   float: left;
+   margin: .5em 10px 0 0;
+ }
+ .part.search-result .CS_work .work-cover {
+   max-width: 70px;
+ }
+ #innehall .tab-container .tab-content .CS_work .work-cover img {
+   float: none !important;
+   margin: 0;
+ }
+ #innehall .CS_list-container img {
+   max-width: 70px;
+   float: left;
+   margin-right: 1em;
+ }
+ .work-cover img, .CS_cover img, .work-image img {
+   border-radius: 0 !important;
+ }
+ .show-tabs-with-catalog-lists .top-list-link {
+   margin-left: 10px;
+ }
+ #startsida .design-zone h2 {
+   margin-left: 15px;
+ }
+ #innehall .show-articles-in-columns h2 {
+   color: #000;
+   line-height: 2em;
+ }
+ #innehall .show-articles-in-columns ul.CS_list-container {
+   border: none;
+   padding: 0.5em;
+   width: 100%;
+ }
+ #innehall .tips .puff ul, #innehall .CS_list-container.CS_list {
+   list-style: none;
+   margin: 0;
+ }
+ #innehall .CS_search-result .work, #innehall .part.book-suggestion-list>ol>li, #innehall .part.show-articles-in-columns li.CS_list-item {
+  min-height: 140px;
+  border: 1px solid transparent !important;
+  -webkit-transition: border-color 0.3s;
+  -moz-transition: border-color 0.3s;
+  -ms-transition: border-color 0.3s;
+  -o-transition: border-color 0.3s;
+  position: relative;
+  padding: 10px 20px 10px;
+  margin: 1em -3%;
+ }
+ #innehall .design-zone .part .CS_list li {
+  box-sizing: border-box;
+}
+#innehall .show-articles-in-columns li.CS_highlight-True {
+  width: 100%;
+  position: relative;
+  padding: 10px 20px 10px;
+  margin: 1em -3%;
+}
+#innehall .show-articles-in-columns li.CS_highlight-True img {
+  max-width: 90px;
+}
+.design-two_columns .zone_two {
+  float: right;
+}
+.design-two_columns>.design-zone {
+  float: left;
+  width: 49%;
+}
+.part.book-suggestion-list ol {
+  margin: 0 1% 1em 1%;
+}
+
+#innehall .CS_popular-tags h2, #innehall .CS_user-favourites h2, #innehall .CS_search-result h2, #innehall .CS_quickLink h2, #innehall .arrangemang h2, #innehall .book-suggestion-list h2, #innehall .CS_list-container h2, #innehall .show-articles-in-columns h2, #innehall .article-flow h2, #innehall .box.tips h2 {
+  color: #000;
+  line-height: 2em;
+}
+#innehall .CS_search-result .work .work-cover, #innehall .part.book-suggestion-list>ol>li .work-cover, #innehall .part.show-articles-in-columns li.CS_list-item .work-cover {
+  padding: 0 10px 0 0;
+  width: 90px;
+  max-height: 120px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+#innehall .CS_search-result .work .work-cover img, #innehall .part.book-suggestion-list>ol>li .work-cover img, #innehall .part.show-articles-in-columns li.CS_list-item .work-cover img {
+  width: 100%;
+  max-width: 90px;
+}
+
+  
+
  /**/
 
 
@@ -380,25 +582,35 @@ div.men-top {
   margin: 0 auto 30px;
   position: relative;
 }
-
-
-
+.stiles-dos-not-want-to-work-thre {
+   max-width: 95px;
+   margin-right: 4%;
+   float: left;
+ }
+.stiles-dos-not-want-to-work-5 {
+   margin: 0 -70px !important;
+ }
+ .stiles-dos-not-want-to-work-6 {
+  margin: 0 !important;
+ }
+ .stiles-dos-not-want-to-work-7 {
+  margin-left: 110px;
+ }
+ .stiles-dos-not-want-to-work-8 {
+  margin-left: 110px;
+  margin-bottom: 5px;
+ }
 .ReadSpeakerLink{
   padding: 3px 10px 0px 25px;
   background: url(../images/readspeak_icon.gif) no-repeat;
   white-space: nowrap;
 }
-.part{
-  margin-bottom: 1em;
-}
+
 .tabs{
   list-style: none;
   margin: 0;
 }
-.open{
-  background-color: #fff;
-  bottom: 0;
-}
+
 .design-two_columns{
   clear: both;
 }
