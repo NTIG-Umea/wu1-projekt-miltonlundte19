@@ -26,6 +26,9 @@ jag har också endrat allt som ändrarsej som boktips och artiklar till saknad o
 ##### (senare under dagen)
 jag har lagtill enumer class också har jag lagtill en bild till en länk och lite "regler" i classerna men för det mesta är dem toma så att stilen på sidan är helt förstörd nu.
 
+#### (2021-05-24)
+jag har sat in stiler i style.css för ellement, id och claser.
+
 #### (2021-05-27)
 jag har fortsat att stopa in stilerna på min sida från legimus hemsida så att jag sedan kan ändra dem såa tt det ser betre ut.  
 har också lagt till en bakrunds billd som liger typ bakom sidan och en stil bild på sidan.
