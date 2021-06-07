@@ -1,12 +1,16 @@
-# Titel
+# Slutprodjekt 
 
-Författare och datum.
+Milton Lund 07/06-2021
 
 ## Inledning
+
+syftet med deta arbete var att förbeetra någonting från en vebsida och jag valde att förbetra hur stilarna ser utt i olika storlekar av scermar och hur menyn syns. 
 
 Här beskriver du kortfattat arbetets syfte/mål, arbetssätt, genomförande.
 
 ## Bakgrund
+
+efter vi blev presenterat arbetet så skule vi börja planera av vad vi vile gjöra och skriva ner det 
 
 Redovisa arbetets olika delar. Så att läsaren förstår vad du gjort och hur.
 
