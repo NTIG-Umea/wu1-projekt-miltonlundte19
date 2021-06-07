@@ -49,7 +49,7 @@
   margin-top: 1.5em;
 }
 #sidhuvud #container-top-menu {
-    position: relative;
+  position: relative;
 }
 #sidhuvud #container-top-menu {
   display: block;
@@ -85,7 +85,6 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
 body {
   font: 68.5%/1.4 Verdana,Geneva,Arial,Lucida,Helvetica,sans-serif;
   color: #333;
@@ -134,7 +133,6 @@ input[type="submit"] {
   cursor: pointer;
   white-space: normal;
 }
-
 h2, h3 {
   font-family: "variableblack",Helvetica,Arial,sans-serif;
   font-weight: normal;
@@ -160,10 +158,7 @@ p {
   a p {
     color: #333;
   }
-
-
 /* id som förändrar element */
-
 #funktionsmeny ul {
   margin: 0;
 }
@@ -195,24 +190,14 @@ p {
   font-size: 1.2em;
 }
 /* multi stiler (förändras eftersom att den har båda av stilerna)*/
-
-
 /* stilar för claser */
-
  /*  befor och after claser */ 
-.clearfix{
-
-}
 .clearfix:after {
   clear: both;
 }
 .clearfix:before, .clearfix:after{
   display: table;
   content: "";
-}
-
-.CS_clearfix{
-
 }
 .CS_clearfix:after{
   visibility: hidden;
@@ -226,11 +211,7 @@ p {
   content: url(../images/menu-shadow-top.png);
   display: block;
 }
-
  /* CS clasernas stiler */
-.CS_button{
-
-}
 .CS_startBox{
   padding: 1em;
   border: 1px solid #dbdbdb;
@@ -242,39 +223,12 @@ p {
   border-radius: 10px;
   box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 23%);
 }
-.CS_quickLink{
-
-}
-.CS_quickLinkNarrow{
-
-}
-.CS_list-container{
-
-}
-.CS_work{
-
-}
-.CS_alternative-layout-False{
-
-}
-.CS_list{
-
-}
-.CS_list-item{
-
-}
-.CS_highlight-True{
-
-}
-
-
 .tips.CS_list-container{
   margin: 2em 0;
 }
 .stiles-dos-not-want-to-work-4 {
    display: block !important;
  }
-
  /* multi claser */
 .startpage .design-two_columns .part {
   margin: 0 !important;
@@ -529,7 +483,6 @@ fieldset>div{
 .part.book-suggestion-list ol {
   margin: 0 1% 1em 1%;
 }
-
 #innehall .CS_popular-tags h2, #innehall .CS_user-favourites h2, #innehall .CS_search-result h2, #innehall .CS_quickLink h2, #innehall .arrangemang h2, #innehall .book-suggestion-list h2, #innehall .CS_list-container h2, #innehall .show-articles-in-columns h2, #innehall .article-flow h2, #innehall .box.tips h2 {
   color: #000;
   line-height: 2em;
@@ -546,13 +499,6 @@ fieldset>div{
   width: 100%;
   max-width: 90px;
 }
-
-  
-
- /**/
-
-
-
  /* inte sorterade claser */
 .container {
   width: 80%;
@@ -562,7 +508,6 @@ div.men-top {
   background-color: yellow;
   padding: 20px;
 }
-
 .sit-dos-not-work-sov-i-had-to-majk-this-class-wid-speling-not-god-and-grama {
   width: auto;
   padding: 0 190px !important;
@@ -599,12 +544,10 @@ div.men-top {
   background: url(../images/readspeak_icon.gif) no-repeat;
   white-space: nowrap;
 }
-
 .tabs{
   list-style: none;
   margin: 0;
 }
-
 .design-two_columns{
   clear: both;
 }
@@ -629,94 +572,13 @@ div.men-top {
   left: 50%;
   margin-left: -320px
 }
-
-
-/* inte sorterade toma claser */
-
-.login-status{
-
-}
-.btn{
-
-}
-.login{
-
-}
-.last{
-
-}
-.expander-icon{
-
-}
-.interaction-element-group{
-
-}
-.menu-text{
-
-}
-.container-top-menu{
-
-}
-.huvudpuff{
-
-}
-.startpufftext{
-
-}
-.teaser{
-
-}
-.introduction{
-  
-}
-.show-tabs-with-catalog-lists{
-
-}
-.tab-container{
-
-}
-.work-details-header{
-
-}
-.work-cover{
-
-}
-.top-list-link{
-
-}
-.design-container{
-
-}
-.design-zone{
-
-}
-.zone_one{
-
-}
-.book-suggestion-list{
-
-}
-.box{
-
-}
-.tips{
-
-}
-
-
-
-
+/* media funktionerna (men dem är toma) */
 @media screen and (max-width: 600px) {
-  div.men-top {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+  
 }
 @media screen and (min-width: 400px) {
 
 }
-
 @media screen and (min-width: 800px) {
 
 }
