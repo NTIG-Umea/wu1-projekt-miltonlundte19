@@ -25,8 +25,23 @@
   float: right;
   margin: 2rem 3rem 1rem;
 }
- 
+#innehall {
+  position: relative;
 
+}
+#innehall {
+  padding-top: 1.5em;
+}
+#innehall {
+  min-height: 700px;
+  padding: 0 2% 1em;
+  background: #fff;
+}
+#location-path {
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+}
 /* multi id stiler */
 #sidhuvud #logotyp{
   float: left;
@@ -34,7 +49,9 @@
   margin-top: 1.5em;
 }
 #sidhuvud #container-top-menu {
-  position: relative;
+    position: relative;
+}
+#sidhuvud #container-top-menu {
   display: block;
   clear: both;
   background-color: #fff;
@@ -53,26 +70,17 @@
 #mainsearch #only-daisy-option {
   display: inline-block;
 }
-#mainsearch #only-daisy-option input {
-  height: 25px;
-  vertical-align: bottom;
-}
-#mainsearch #only-daisy-option label {
-  line-height: 30px;
-  white-space: pre;
-  margin-top: 2px;
-}
-#mainsearch #snabbsokknapp {
+#mainserch #snabbsokknapp {
   display: inline-block;
   font-size: 1.4em;
   width: 70px;
   height: 37px;
   margin-right: 0;
 }
-
-
-
-/* stiler för element */
+#startsida #innehall {
+  padding-bottom: 0;
+}
+/* stiler för alla element */
 html, body {
   margin: 0;
   padding: 0;
@@ -82,6 +90,10 @@ body {
   font: 68.5%/1.4 Verdana,Geneva,Arial,Lucida,Helvetica,sans-serif;
   color: #333;
   background: #fff
+}
+body {
+  background: url(../images/body-bg.jpg) no-repeat center fixed;
+  background-size: cover;
 }
 li{
   margin: 0;
@@ -98,8 +110,14 @@ a {
   color: #b52f5e;
   background-color: transparent;
 }
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
 form {
-  margin: 0%;
+  margin: 0;
   padding: 0;
 }
 fieldset {
@@ -111,27 +129,43 @@ label {
   display: block;
   font-weight: bold;
 }
-input[type="checkbox"]+label {
-  display: inline;
-  margin-left: 0.5em;
-}
-
- /* stilar som är på flera element */
-input[type="submit"], button {
+input[type="submit"] {
   -webkit-appearance: square-button;
   cursor: pointer;
   white-space: normal;
 }
 
-/* id som förändrar element */
-#funktionsmeny ul li {
-  display: inline-block;
+h2, h3 {
+  font-family: "variableblack",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
 }
-#funktionsmeny .login-status a {
-  padding: 6px 15px;
-  text-decoration: none;
-  background-color: #a54399;
-  color: white;
+p {
+  margin: 0 0 1em 0;
+  padding: 0 0 0 0;
+}
+p {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+  /* multi ellement stilar */
+  a img {
+    border-width: 0;
+  }
+  h2 a, h3 a {
+    font-family: "variableblack",Helvetica,Arial,sans-serif;
+    font-weight: normal;
+  }
+  a p {
+    color: #333;
+  }
+
+
+/* id som förändrar element */
+
+#funktionsmeny ul {
+  margin: 0;
 }
 #funktionsmeny .login{
   font-size: 1.2em;
@@ -143,23 +177,29 @@ input[type="submit"], button {
 #mainsearch label {
   display: none;
 }
-
-#sidhuvud ol {
-  list-style: none;
+#sidhuvud ol, .CS_search-result ol {
+  list-style-type: none;
 }
-#mainsearch label[for=only-daisy] {
-  display: inline-block;
+#mainsearch a {
   color: #fff;
-  margin-left: 2px;
 }
-
-
-/* multi stiler */
+#innehall h2 {
+  line-height: 1.25em;
+  margin-bottom: 0.25em;
+  margin-top: 0.5em;
+}
+#sidcontainer img {
+  border-radius: 10px;
+}
+#innehall li {
+  font-size: 1.2em;
+}
+/* multi stiler (förändras eftersom att den har båda av stilerna)*/
 
 
 /* stilar för claser */
 
- /*  clerflec och dens olika delar */ 
+ /*  befor och after claser */ 
 .clearfix{
 
 }
@@ -182,16 +222,25 @@ input[type="submit"], button {
     content: " ";
     clear: both;
 }
+#sidhuvud #container-top-menu:before{
+  content: url(../images/menu-shadow-top.png);
+  display: block;
+}
 
  /* CS clasernas stiler */
 .CS_button{
 
 }
 .CS_startBox{
-
+  padding: 1em;
+  border: 1px solid #dbdbdb;
+  background-repeat: no-repeat;
 }
 .CS_tallStartBox{
-
+  min-height: 280px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 23%);
 }
 .CS_quickLink{
 
@@ -222,14 +271,14 @@ input[type="submit"], button {
 .tips.CS_list-container{
   margin: 2em 0;
 }
-
-
+.stiles-dos-not-want-to-work-4 {
+   display: block !important;
+ }
 
  /* multi claser */
 .startpage .design-two_columns .part {
   margin: 0 !important;
 }
-
 .design-two_columns .zone_one{
   margin-right: 2%;
 }
@@ -237,35 +286,43 @@ input[type="submit"], button {
   float: left;
   width: 49%;
 }
-
 .startpage .design-two_columns {
   margin: 0 -70px !important;
 }
 fieldset>div{
   margin-bottom: 0.5rem;
 }
-
-
-
-
- /* id som förendrar claser */
-#snabbsokknapp.CS_button {
-  background-color: #e7e7e7;
-  color: black;
-  border: 1px solid rgba(0,0,0,0.3);
-  border-radius: 5px;
-  padding: 0.5em 1em;
-  margin: 0.2em 0.4em;
-  font-weight: bold;
+#innehall .tab-container .tabs li.open{
+  background-color: #fff;
+  bottom: 0;
 }
-
-
+.part{
+  margin-bottom: 1em;
+}
+.part ol {
+  margin: 0;
+  list-style: none;
+}
  /* multi stilar (med id, clasar och ellement) */
-
+ #funktionsmeny ul li {
+   display: inline-block;
+ }
+ #funktionsmeny .login-status a {
+   padding: 6px 15px;
+   text-decoration: none;
+   background-color: #a54399;
+   color: white;
+ }
+ #mainsearch #only-daisy-option input {
+   height: 25px;
+   vertical-align: bottom;
+ }
+ #sidhuvud #container-top-menu ol {
+   display: block;
+ }
  #sidhuvud #container-top-menu ol li a.expander-icon, #sidhuvud #container-top-menu ol li span.expander-icon {
   display: none;
  }
-
  #sidhuvud #container-top-menu ol li a, #sidhuvud #container-top-menu ol li span {
   display: block;
   float: left;
@@ -275,20 +332,231 @@ fieldset>div{
   font-size: 1.4em;
   color: black;
  }
-
  #sidhuvud #container-top-menu ol li.last span, #sidhuvud #container-top-menu ol li.last a {
    float: right;
  }
- input[type="submit"], a.btn {
+ #mainsearch #only-daisy-option label {
+   line-height: 30px;
+   white-space: pre;
+   margin-top: 2px;
+ }
+ #mainsearch label[for=only-daisy] {
+   display: inline-block;
+   color: #fff;
+   margin-left: 2px;
+ }
+ #snabbsokknapp.CS_button {
+  background-color: #e7e7e7;
+  color: black;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  margin: 0.2em 0.4em;
+  font-weight: bold;
+ }
+ input[type="submit"] ,a.btn {
   padding: 6px 15px;
   text-decoration: none;
   background-color: #a54399;
   color: white;
   border: none;
   border-radius: 5px;
+ }
+ #SpeedSearchForm .interaction-element-group div+div {
+   margin-top: 6px;
+ }
+ #SpeedSearchForm .search-links {
+   float: right;
+ }
+ .page-container #sidcontainer {
+   display: table;
+   width: 100%;
+ }
+ .page-container #sidcontainer #innehall {
+   display: table-cell;
+ }
+ #innehall>* {
+   margin-bottom: .5em;
+ }
+ .puff-content h2 a {
+   font-size: 17px;
+ }
+ .puff-content .startpufftext a {
+   font-size: 15px;
+ }
+ #innehall .CS_quickLink, .CS_search-result {
+   display: block;
+   margin-bottom: 1.5em;
+ }
+ .part.teaser{
+   padding: 10px;
+   border: 1px solid transparent !important;
+   -webkit-transition: border-coler 0.3s;
+ }
+ #startsida #innehall .tab-container {
+   margin: 0 -70px;
+ }
+ #innehall .tab-container {
+   position: relative;
+ }
+ #innehall .tab-container .tabs li {
+   display: inline-block;
+   border: 1px solid #e5e5e5;
+   border-bottom-color: transparent;
+   border-radius: 5px 5px 0 0;
+   bottom: -5px;
+   position: relative;
+   background-color: #f9f9f9;
+   padding: 10px;
+   color: #b52f5e;
+   cursor: pointer;
+   font-weight: bold;
+ }
+ #innehall .tab-container .tab-content {
+   display: none;
+   position: relative;
+   padding: 10px 20px 10px;
+   margin: 1em 3%;
+   padding: 0px 0px 1px;
+   margin: 0 -2% 3em;
+   background-color: white;
+ }
+ #innehall .CS_search-result {
+   display: block;
+ }
+ .part.search-result {
+   position: relative;
+ }
+ #innehall .tab-container .tab-content ol {
+   display: table;
+   table-layout: fixed;
+   width: 100%;
+ }
+ .show-tabs-with-catalog-lists .CS_search-result>ol {
+   margin: 0 !important;
+ }
+ #innehall .tab-container .tab-content .CS_work {
+   display: table-cell;
+   border: none;
+   text-align: center;
+ }
+ #innehall .CS_search-result li {
+   padding: 0.5em;
+ }
+ #innehall .CS_list-container {
+   display: block;
+   margin-bottom: 1.5em;
+ }
+ .show-tabs-with-catalog-lists .CS_work {
+   border: 1px solid transparent !important;
+   -webkit-transition: border-color 0.3s;
+ }
+ #innehall .tab-content .CS_work .work-details-header {
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+ }
+ #innehall .tab-container .tab-content .CS_work .work-details-header small {
+   display: block;
+ }
+ #innehall .tab-container .tab-content .CS_work .work-cover {
+   float: none !important;
+   text-align: center;
+   margin: 0.5em auto;
+ }
+ .part.search-result .CS_work .work-cover {
+   float: left;
+   margin: .5em 10px 0 0;
+ }
+ .part.search-result .CS_work .work-cover {
+   max-width: 70px;
+ }
+ #innehall .tab-container .tab-content .CS_work .work-cover img {
+   float: none !important;
+   margin: 0;
+ }
+ #innehall .CS_list-container img {
+   max-width: 70px;
+   float: left;
+   margin-right: 1em;
+ }
+ .work-cover img, .CS_cover img, .work-image img {
+   border-radius: 0 !important;
+ }
+ .show-tabs-with-catalog-lists .top-list-link {
+   margin-left: 10px;
+ }
+ #startsida .design-zone h2 {
+   margin-left: 15px;
+ }
+ #innehall .show-articles-in-columns h2 {
+   color: #000;
+   line-height: 2em;
+ }
+ #innehall .show-articles-in-columns ul.CS_list-container {
+   border: none;
+   padding: 0.5em;
+   width: 100%;
+ }
+ #innehall .tips .puff ul, #innehall .CS_list-container.CS_list {
+   list-style: none;
+   margin: 0;
+ }
+ #innehall .CS_search-result .work, #innehall .part.book-suggestion-list>ol>li, #innehall .part.show-articles-in-columns li.CS_list-item {
+  min-height: 140px;
+  border: 1px solid transparent !important;
+  -webkit-transition: border-color 0.3s;
+  -moz-transition: border-color 0.3s;
+  -ms-transition: border-color 0.3s;
+  -o-transition: border-color 0.3s;
+  position: relative;
+  padding: 10px 20px 10px;
+  margin: 1em -3%;
+ }
+ #innehall .design-zone .part .CS_list li {
+  box-sizing: border-box;
+}
+#innehall .show-articles-in-columns li.CS_highlight-True {
+  width: 100%;
+  position: relative;
+  padding: 10px 20px 10px;
+  margin: 1em -3%;
+}
+#innehall .show-articles-in-columns li.CS_highlight-True img {
+  max-width: 90px;
+}
+.design-two_columns .zone_two {
+  float: right;
+}
+.design-two_columns>.design-zone {
+  float: left;
+  width: 49%;
+}
+.part.book-suggestion-list ol {
+  margin: 0 1% 1em 1%;
 }
 
+#innehall .CS_popular-tags h2, #innehall .CS_user-favourites h2, #innehall .CS_search-result h2, #innehall .CS_quickLink h2, #innehall .arrangemang h2, #innehall .book-suggestion-list h2, #innehall .CS_list-container h2, #innehall .show-articles-in-columns h2, #innehall .article-flow h2, #innehall .box.tips h2 {
+  color: #000;
+  line-height: 2em;
+}
+#innehall .CS_search-result .work .work-cover, #innehall .part.book-suggestion-list>ol>li .work-cover, #innehall .part.show-articles-in-columns li.CS_list-item .work-cover {
+  padding: 0 10px 0 0;
+  width: 90px;
+  max-height: 120px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+#innehall .CS_search-result .work .work-cover img, #innehall .part.book-suggestion-list>ol>li .work-cover img, #innehall .part.show-articles-in-columns li.CS_list-item .work-cover img {
+  width: 100%;
+  max-width: 90px;
+}
+
+  
+
  /**/
+
 
 
  /* inte sorterade claser */
@@ -301,48 +569,76 @@ div.men-top {
   padding: 20px;
 }
 
-
-
+.sit-dos-not-work-sov-i-had-to-majk-this-class-wid-speling-not-god-and-grama {
+  width: auto;
+  padding: 0 190px !important;
+}
+.stiles-dos-not-want-to-work-tow {
+  margin-left: -170px;
+  margin-right: -170px;
+}
 .page-container{
   width: 995px;
   margin: 0 auto 30px;
   position: relative;
 }
-.search-links{
-  float: right;
-  color: #333;
-
-}
-.s-text{
-  color: #fff;
-}
+.stiles-dos-not-want-to-work-thre {
+   max-width: 95px;
+   margin-right: 4%;
+   float: left;
+ }
+.stiles-dos-not-want-to-work-5 {
+   margin: 0 -70px !important;
+ }
+ .stiles-dos-not-want-to-work-6 {
+  margin: 0 !important;
+ }
+ .stiles-dos-not-want-to-work-7 {
+  margin-left: 110px;
+ }
+ .stiles-dos-not-want-to-work-8 {
+  margin-left: 110px;
+  margin-bottom: 5px;
+ }
 .ReadSpeakerLink{
   padding: 3px 10px 0px 25px;
   background: url(../images/readspeak_icon.gif) no-repeat;
   white-space: nowrap;
 }
-.part{
-  margin-bottom: 1em;
-}
+
 .tabs{
   list-style: none;
   margin: 0;
 }
-.open{
-  background-color: #fff;
-  bottom: 0;
-}
+
 .design-two_columns{
   clear: both;
 }
 .search-area{
   position: relative;
 }
+.access-key-anchor {
+  position: absolute;
+  left: -9999px;
+}
+.rs_skip{
+  position: absolute;
+  right: 0;
+}
+.puff-content{
+  background: white;
+  position: absolute;
+  width: 600px;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -320px
+}
+
 
 /* inte sorterade toma claser */
-.startpage{
 
-}
 .login-status{
 
 }
@@ -361,17 +657,10 @@ div.men-top {
 .interaction-element-group{
 
 }
-
-.rs_skip{
-
-}
 .menu-text{
 
 }
 .container-top-menu{
-
-}
-.puff-content{
 
 }
 .huvudpuff{
@@ -385,9 +674,6 @@ div.men-top {
 }
 .introduction{
   
-}
-.clearfix{
-
 }
 .show-tabs-with-catalog-lists{
 
