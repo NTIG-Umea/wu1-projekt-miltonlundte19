@@ -391,7 +391,6 @@ fieldset>div{
  .part.teaser{
    padding: 10px;
    border: 1px solid transparent !important;
-   -webkit-transition: border-coler 0.3s;
  }
  #startsida #innehall .tab-container {
    margin: 0 -70px;
@@ -449,7 +448,6 @@ fieldset>div{
  }
  .show-tabs-with-catalog-lists .CS_work {
    border: 1px solid transparent !important;
-   -webkit-transition: border-color 0.3s;
  }
  #innehall .tab-content .CS_work .work-details-header {
    overflow: hidden;
@@ -505,10 +503,6 @@ fieldset>div{
  #innehall .CS_search-result .work, #innehall .part.book-suggestion-list>ol>li, #innehall .part.show-articles-in-columns li.CS_list-item {
   min-height: 140px;
   border: 1px solid transparent !important;
-  -webkit-transition: border-color 0.3s;
-  -moz-transition: border-color 0.3s;
-  -ms-transition: border-color 0.3s;
-  -o-transition: border-color 0.3s;
   position: relative;
   padding: 10px 20px 10px;
   margin: 1em -3%;
