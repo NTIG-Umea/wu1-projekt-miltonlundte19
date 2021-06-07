@@ -129,7 +129,6 @@ label {
   font-weight: bold;
 }
 input[type="submit"] {
-  -webkit-appearance: square-button;
   cursor: pointer;
   white-space: normal;
 }
